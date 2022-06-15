@@ -10,6 +10,7 @@
 }
 string[] SortArray(string[] array)
 {
+    int g = -1;
     int count = 0;
     string[] newArray = new string[array.Length];
     string charsCount = string.Empty;
@@ -22,10 +23,8 @@ string[] SortArray(string[] array)
         }
         if (count <= 3)
         {
-            for (int g = 0; g < newArray.Length; g++)
-            {
-                newArray[g] = array[i];
-            }
+            g++;
+            newArray[g] = array[i];
         }
     }
     return newArray;
