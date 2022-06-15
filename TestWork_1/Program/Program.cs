@@ -11,8 +11,7 @@
 string[] SortArray(string[] array)
 {
     int count = 0;
-    int size = 0;
-    string[] newArray = new string[size];
+    string[] newArray = new string[array.Length];
     string charsCount = string.Empty;
     for (int i = 0; i < array.Length; i++)
     {
@@ -23,7 +22,6 @@ string[] SortArray(string[] array)
         }
         if (count <= 3)
         {
-            size++;
             newArray[i] = array[i];
         }
     }
@@ -33,7 +31,7 @@ void ShowArray(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write(i + " ");
+        Console.Write(array[i] + " ");
     }
     Console.WriteLine();
 }
