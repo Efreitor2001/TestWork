@@ -22,7 +22,10 @@ string[] SortArray(string[] array)
         }
         if (count <= 3)
         {
-            newArray[i] = array[i];
+            for (int g = 0; g < newArray.Length; g++)
+            {
+                newArray[g] = array[i];
+            }
         }
     }
     return newArray;
